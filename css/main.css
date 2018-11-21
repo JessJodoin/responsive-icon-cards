@@ -24,18 +24,22 @@ body {
   margin: 0;
 }
 
-.cards {
+.card {
   margin: .75em;
   padding: 0;
 }
 
-.card {
+.cards {
   list-style-type: none;
 }
 
 .card-img {
   display: block;
-  margin: .75em auto;
+  margin: .75em auto 0;
+  width: 50px;
+}
+
+.card-img img {
   width: 50px;
 }
 
@@ -54,7 +58,7 @@ body {
 @media only screen and (min-width: 25em) {
 
   .cards {
-    margin-top: 0;
+    margin-top: .75em;
   }
 
   .card-img {
@@ -62,15 +66,24 @@ body {
     margin: 0 .75em .75em 0;
   }
 
+  .card-img img {
+    display: inline-block;
+  }
+
   .card-body {
     display: inline-block;
     margin-top: 0;
-    max-width: 20em;
+    max-width: 19em;
   }
 
   .card-body h2,
   p {
+    margin-top: 0;
     max-width: 18em;
+  }
+
+  .card-body p {
+    max-width: 20em;
   }
 
 }
@@ -82,20 +95,19 @@ body {
     font-size: 110%;
   }
 
-  .cards {
-    display: block;
-    margin: .75em;
+  .card {
+    display: inline;
   }
 
-  .card {
+  .cards {
     display: inline-block;
-    margin-right: .75em;
-    max-width: 10em;
+    margin-left: .7em;
+    max-width: 10.5em;
   }
 
   .card:last-child {
     margin: 0;
-    max-width: 10.5em;
+    max-width: 11em;
   }
 
   .card-img {
@@ -112,25 +124,24 @@ body {
     font-size: 120%;
   }
 
-  .cards {
-    display: block;
-    margin: .75em;
+  .card {
+    display: inline;
   }
 
-  .card {
+  .cards {
     display: inline-block;
-    margin-right: .4em;
+    margin-left: .5em;
     max-width: 15.5em;
   }
 
   .card:last-child {
-    margin-right: .4em;
+    margin-left: .5em;
     max-width: 15.5em;
   }
 
   .card-img {
     display: block;
-    margin: 0 auto .5em;
+    margin: 0 auto 1em;
   }
 
 }
@@ -141,11 +152,11 @@ body {
     font-size: 130%;
   }
 
-  .cards {
+  .card {
     max-width: 80em;
   }
 
-  .card {
+  .cards {
     display: inline-block;
     margin-top: 0;
     max-width: 30em;
