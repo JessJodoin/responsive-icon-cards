@@ -35,14 +35,40 @@ body {
 
 .card-img {
   display: block;
-  margin: 0 auto;
+  margin: .75em auto;
   width: 50px;
 }
 
 .card-body h2 {
-  margin-bottom: 0;
+  margin: .75em 0 0;
+
+  font-weight: normal;
 }
 
 .card-body p {
-  margin-top: 0;
+  margin: 0 0 .75em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .cards {
+    margin-top: 0;
+  }
+
+  .card-img {
+    display: inline-block;
+    margin: 0 .75em .75em 0;
+  }
+
+  .card-body {
+    display: inline-block;
+    margin-top: 0;
+    max-width: 20em;
+  }
+
+  .card-body h2,
+  p {
+    max-width: 18em;
+  }
+
 }
