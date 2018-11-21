@@ -40,12 +40,14 @@ body {
 }
 
 .card-body h2 {
+  display: inline-block;
   margin: .75em 0 0;
 
   font-weight: normal;
 }
 
 .card-body p {
+  display: inline-block;
   margin: 0 0 .75em;
 }
 
@@ -81,9 +83,8 @@ body {
   }
 
   .cards {
-    display: inline-block;
+    display: block;
     margin: .75em;
-    width: 100%;
   }
 
   .card {
@@ -92,9 +93,44 @@ body {
     max-width: 10em;
   }
 
+  .card:last-child {
+    margin: 0;
+    max-width: 10.5em;
+  }
+
   .card-img {
     display: block;
     margin: 0 auto .75em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    line-height: 1.5;
+    font-size: 120%;
+  }
+
+  .cards {
+    display: block;
+    margin: .75em;
+  }
+
+  .card {
+    display: inline-block;
+    margin-right: .4em;
+    max-width: 15.5em;
+  }
+
+  .card:last-child {
+    margin-right: .4em;
+    max-width: 15.5em;
+  }
+
+  .card-img {
+    display: block;
+    margin: 0 auto .5em;
   }
 
 }
