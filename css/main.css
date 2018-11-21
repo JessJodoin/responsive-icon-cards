@@ -134,3 +134,40 @@ body {
   }
 
 }
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .cards {
+    max-width: 80em;
+  }
+
+  .card {
+    display: inline-block;
+    margin-top: 0;
+    max-width: 30em;
+  }
+
+  .card:last-child {
+    max-width: 30em;
+  }
+
+  .card-img {
+    display: inline-block;
+    margin: 0 .7em 1em 0;
+  }
+
+  .card-body {
+    display: inline-block;
+    margin-top: 0;
+    max-width: 18em;
+  }
+
+  .card-body h2 {
+    margin: 0;
+  }
+
+}
